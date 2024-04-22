@@ -31,13 +31,17 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#contactenos" class="navbar-link" data-nav-link>Contactenos</a>
+            <a href="#contactenos" class="navbar-link" data-nav-link>Contacto</a>
           </li>
 
-          <li class="navbar-item">
+          <li>
             <form class="search-form" action="/search" method="GET">
               <input type="text" name="q" placeholder="Buscar...">
-              <button type="submit">Buscar</button>
+              <button class ='search-button' type="submit">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                Buscar
+              </button>
+              
             </form>
           </li>
 
@@ -68,32 +72,32 @@
     
         <!--<p class="section-subtitulo">Enjoy The Games</p>-->
     
-        <h1 class="h1 titulo inicio-titulo">Tienda de jugos <br> para verdaderos GAMERS!</h1>
+        <h1 class="h1 titulo inicio-titulo">Tienda de juegos <br> para verdaderos GAMERS!</h1>
     
         <div class="box-container">
           <div class="box">
-            <img src="./assets/images/coming-soon.png" alt="juego">
+            <img src="/assets/images/coming-soon.png" alt="juego">
             <div class="box-overlay">
               <h2>Texto sobre el juego</h2>
             </div>
           </div>
 
           <div class="box">
-            <img src="./assets/images/coming-soon.png" alt="juego">
+            <img src="/assets/images/coming-soon.png" alt="juego">
             <div class="box-overlay">
               <h2>Texto sobre el juego</h2>
             </div>
           </div>
 
           <div class="box">
-            <img src="./assets/images/coming-soon.png" alt="juego">
+            <img src="/assets/images/coming-soon.png" alt="juego">
             <div class="box-overlay">
               <h2>Texto sobre el juego</h2>
             </div>
           </div>
 
           <div class="box">
-            <img src="./assets/images/coming-soon.png" alt="juego">
+            <img src="/assets/images/coming-soon.png" alt="juego">
             <div class="box-overlay">
               <h2>Texto sobre el juego</h2>
             </div>
@@ -116,14 +120,14 @@
       <section class="section noticias" aria-label="ultimas noticias" id="noticias">
         <div class="container">
 
-          <p class="section-subtitulo" >Que esta pasando en el mundo GAMER?</p>
+          <p class="section-subtitulo" >¿Qué esta pasando en el mundo GAMER?</p>
 
           <h2 class="h2 section-titulo" >
             Noticias y <span class="span">más</span>
           </h2>
 
           <p class="section-text" >
-            Encontra acá las noticias mas relevantes sobre proximos lanzamientos y descubre nuevos juegos!
+            Encontra acá las noticias más relevantes sobre próximos lanzamientos y descubre nuevos juegos!
           </p>
 
           <ul class="noticias-list">
@@ -162,7 +166,7 @@
                   </h3>
 
                   <p class="carta-text">
-                     El desarrollo de videojuegos esta en su maximo auge, cada vez más empresas se interesan en invertir y crear un nuevo juego
+                     El desarrollo de videojuegos está en su máximo auge, cada vez más empresas se interesan en invertir y crear un nuevo juego
                   </p>
 
                   <a href="#" class="link has-before">Leer más</a>
@@ -205,7 +209,7 @@
                   </h3>
 
                   <p class="carta-text">
-                    Aca encontraras todo los juegos nuevos recien salidos al mercado y los proximos a salir en el Q3 de 2024
+                    Aca encontrarás todos los juegos nuevos recién salidos al mercado y los próximos a salir en el Q3 de 2024
                   </p>
 
                   <a href="#" class="link has-before">Leer más</a>
@@ -244,11 +248,11 @@
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="carta-titulo">Invertir en videojuegos es posible?</a>
+                    <a href="#" class="carta-titulo">Invertir en videojuegos ¿es posible?</a>
                   </h3>
 
                   <p class="carta-text">
-                    En este nota encontraras información sobre  como y donde poder invertir en el mercado de los videojugos
+                    En este nota encontrarás información sobre  cómo y donde poder invertir en el mercado de los videojugos
                   </p>
 
                   <a href="#" class="link has-before">Leer más</a>
@@ -279,9 +283,72 @@
             <img src="./assets/images/gaming_store-logo.png" width="150" height="73" loading="lazy" alt="Unigine logo">
           </a>
 
-          <p class="footer-text">
+          <!-- <p class="footer-text">
             Desde GAMING STORE nos comprometos a siempre ofrecer los mejores juegos del mercado y estar actualizados con las noticias del ambiente
-          </p>
+          </p> -->
+
+          
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="titulo footer-list-titulo has-after">Links Útiles</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Centro de ayuda</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Políticas de privacidad</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Términos de uso</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="titulo footer-list-titulo has-after">Contactanos</p>
+
+          <div class="contact-item">
+            <span class="span">Dirección</span>
+
+            <address class="contact-link">
+              Saavedra 1030 Capital Federal
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Correo</span>
+
+            <a href="mailto:info@gamingstore.com" class="contact-link">info@gamingstore.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Teléfono</span>
+
+            <a href="tel:+12345678910" class="contact-link">+54 9 11 1111-1111</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="titulo footer-list-titulo has-after">Suscribite</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Correo...." autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Suscribirse</button>
+          </form>
 
           <ul class="social-list">
 
@@ -291,11 +358,13 @@
               </a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-x"></ion-icon>
               </a>
-            </li>
+            </li> -->
+
+             <!-- Se saca link porque la librería no tiene actualizado el ícono de X (ex twitter) -->
 
             <li>
               <a href="#" class="social-link">
@@ -313,67 +382,6 @@
 
         </div>
 
-        <div class="footer-list">
-
-          <p class="titulo footer-list-titulo has-after">Links Utiles</p>
-
-          <ul>
-
-            <li>
-              <a href="#" class="footer-link">Centro de ayuda</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Politicas de privacidad</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terminos de uso</a>
-            </li>
-
-          </ul>
-
-        </div>
-
-        <div class="footer-list">
-
-          <p class="titulo footer-list-titulo has-after">Contactenos</p>
-
-          <div class="contact-item">
-            <span class="span">Dirección</span>
-
-            <address class="contact-link">
-              Capital Federal
-            </address>
-          </div>
-
-          <div class="contact-item">
-            <span class="span">Correo</span>
-
-            <a href="mailto:Info@gamingstore.com" class="contact-link">Info@gamingstore.com</a>
-          </div>
-
-          <div class="contact-item">
-            <span class="span">Telefono</span>
-
-            <a href="tel:+12345678910" class="contact-link">+54 9 11 1111-1111</a>
-          </div>
-
-        </div>
-
-        <div class="footer-list">
-
-          <p class="titulo footer-list-titulo has-after">Suscribite para no perderte de nada</p>
-
-          <form action="./index.html" method="get" class="footer-form">
-            <input type="email" name="email_address" required placeholder="Correo...." autocomplete="off"
-              class="input-field">
-
-            <button type="submit" class="btn" data-btn>Suscribirse</button>
-          </form>
-
-        </div>
-
       </div>
     </div>
 
@@ -381,7 +389,7 @@
       <div class="container">
 
         <p class="copyright">
-          &copy; 2024 todos los derechos reservador a GAMING STORE.
+          &copy; 2024 GAMING STORE. Todos los derechos reservados
         </p>
 
       </div>
