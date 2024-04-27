@@ -398,7 +398,7 @@ body {
   align-items: center;
   text-align: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.5s ease;
 }
 
 .box:hover .box-overlay {
@@ -406,6 +406,8 @@ body {
 }
 
 .box-overlay h2 {
+  background-color: var(--bg-oxford-blue);
+  width: 100%;
   color: white; /* Cambia el color del texto a blanco o cualquier otro color que prefieras */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Agrega una sombra de texto para mejorar la legibilidad */
 }
