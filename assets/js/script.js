@@ -111,6 +111,6 @@ const logOutButton = document.getElementById('signOut');
 logOutButton.addEventListener('click', function() {
 
   console.log('me estoy ejecutando')
-    window.location.href = '../../../index.html';
+    window.location.href = '../../../GamingStore-java.github.io/index.html';
   
 });
