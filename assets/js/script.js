@@ -114,3 +114,48 @@ logOutButton.addEventListener('click', function() {
     window.location.href = '../../../GamingStore-java.github.io/index.html';
   
 });
+
+ document.getElementById('apiButton').addEventListener('click', async function(){
+
+    const url = 'https://mmo-games.p.rapidapi.com/games';
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '7e9392868emsh7ca5b5fbf7bef77p105546jsn8c7ef28dc064',
+        'X-RapidAPI-Host': 'mmo-games.p.rapidapi.com'
+      }
+    };
+    
+    try {
+      const response = await fetch(url, options);
+      const result = await response.json();
+      const primerosResultados = result.slice(0, 20)
+      const gamesContainer = document.getElementById('games-container');
+
+              primerosResultados.forEach(game => {
+                    const box = document.createElement('div');
+                    box.className = 'box';
+
+                    const img = document.createElement('img');
+                    img.src = game.thumbnail;
+                    img.alt = game.title;
+
+                    const overlay = document.createElement('div');
+                    overlay.className = 'box-overlay';
+
+                    const title = document.createElement('h2');
+                    title.textContent = game.title;
+
+            
+
+                    overlay.appendChild(title);
+                    box.appendChild(img);
+                    box.appendChild(overlay);
+                    gamesContainer.appendChild(box);
+                });
+            } catch (error) {
+                alert('ocurrió un error en la consulta');
+            }
+        });
+
+

@@ -43,6 +43,10 @@
           </li>
 
           <li>
+            <button class="btn-sign-out" id="apiButton">Consulta API</button>
+          </li>
+
+          <li>
             <button class="btn-sign-out" id="signOut">Cerrar Sesión</button>
           </li>
 
@@ -74,8 +78,12 @@
         <!--<p class="section-subtitulo">Enjoy The Games</p>-->
     
         <h1 class="h1 titulo inicio-titulo">Tienda de juegos <br> para verdaderos GAMERS!</h1>
-    
-        <div class="box-container">
+
+        <p class="section-subtitulo gamelist" >Lista de juegos</p>
+        
+        <!-- Comento la sección por si en algún momento necesitamos renderizar el listado hardcodeado -->
+        
+        <!-- <div class="box-container">
 
           <div class="box">
             <img src="../assets/images/Juegos/1.jpg" alt="juego">
@@ -166,7 +174,9 @@
     
           
           
-        </div>
+        </div> -->
+
+        <div class="box-container" id="games-container"></div>
     
       </div>
     </div>
@@ -470,7 +480,7 @@
   <!-- ICONOS REDES SOCIALES-->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  
 </body>
 
 </html>
